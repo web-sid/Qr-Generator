@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Search-Bar</title>
+  </head>
+  <body class="bg-[#262a2f]">
+    <div
+      id="container"
+      class="w-[400px] py-6 px-8 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white rounded-xl"
+    >
+      <p class="font-semibold text-2xl mb-3">Enter your text or URL</p>
+      <input
+        id="input"
+        type="text"
+        placeholder="Text or URL"
+        class="w-full h-12 border border-[#494eea] outline-none p-3 rounded-lg my-4"
+      />
+      <div id="qr-div" class="flex justify-center">
+        <img src="" id="img" />
+      </div>
+      <button
+        onclick="generateQr()"
+        class="w-full h-12 bg-[#494eea] border-none outline-none rounded-lg cursor-pointer my-5 font-semibold"
+      >
+        Generate QR Code
+      </button>
+      <button id="reset" class="p-2 bg-gray-200 rounded-lg hover:bg-slate-400">
+        Reset
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
